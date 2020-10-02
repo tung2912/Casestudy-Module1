@@ -1,0 +1,136 @@
+
+
+@media (max-width:500px) {
+    .hotProductItem {
+        width: 100%;
+    }.introright {
+        width: 100%;
+    }
+    .introleft {
+        width: 100%;
+    }
+
+}
+@media (max-width:1114px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        top: 5rem;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display:block;
+        margin: 50px 0;
+        line-height: 1.875rem;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+    a.active, a:hover {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media (max-width:972px) {
+    .hotProductItem {
+        width: 50%;
+    }
+    .newProductListLeft {
+        width: 100%;
+    }
+    .newProductListRight {
+        width: 100%;
+    }
+    .newRightItem {
+        width: 45%;
+    }
+    .introright {
+        width: 100%;
+    }
+    .introleft {
+        width: 100%;
+    }
+    .registLeft {
+        width: 100%;
+        margin-left: 5% ;
+    }
+    .registMid {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .regisRight {
+        width: 100%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:522px) {
+    label.logo {
+        color: white;
+        font-size: 1.3rem; 
+        line-height: 5rem;
+        top: 3rem;
+        padding: 0 2rem;
+        font-weight: bolder;
+        animation: 20s slider infinite;
+    }
+    .hotProductItem {
+        width: 100%;
+    }.introright {
+        width: 100%;
+    }
+    .introleft {
+        width: 100%;
+    }
+}
+@media (max-width:735px) {
+    .footer1 {
+        width: 50%;
+    }
+    .footer2 {
+        width:50%;
+    }
+    .footer2 p {
+        margin-left: 40%;
+    }
+    .footer3 {
+        width:50%;
+        text-align: center;
+    }
+    .footer4 {
+        width:50%;
+    }
+}
+@media (max-width:500px) {
+    .footer1 {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .footer2 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .footer3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .footer4 {
+        width: 100%;
+    }
+
+}

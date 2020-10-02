@@ -1,0 +1,355 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+::before, ::after {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Menu*/
+.menu {
+    overflow: auto;
+    margin-bottom: 5em;
+}
+
+nav {
+    background: #0082e6;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+label.logo {
+    color: white;
+    font-size: 2rem; 
+    line-height: 5rem; 
+    padding: 0 6.25rem;
+    font-weight: bolder;
+}
+nav ul {
+    float:right;
+    margin-right: 1.25rem;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 5rem;
+    margin:0 .83rem;
+}
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+    text-transform:  uppercase;
+    font-weight: bold;
+    border-radius: .2rem;
+    padding: .43rem .81rem;
+}
+a.active,a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn {
+    color: white;
+    font-size: 2rem;
+    float: right;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+/* Silde banner*/
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    margin: 0;
+    left: 0;
+    width: 300%;
+    animation: 12s slider infinite;
+}
+#slider figure img {
+    width: 33.3%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    75% {
+        left: -100%;
+    }
+    100% {
+        left:0;
+    }
+}
+/*Sản phẩm mới*/
+.newProducts h1 {
+    color: #0082e6;
+    text-align: center;
+    margin: 1em 0 1em;
+    font-weight: bolder;
+}
+.newProductList {
+    width: 100%;
+}
+.newProductListLeft {
+    width: 40%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.newProductListLeft:hover {
+    transform: scale(.90);
+    transition: ease 1s;
+    opacity: 0.6;
+    background-color: rgba(170,196,247,0.58);
+}
+.newProductListLeft img {
+    width: 100%;
+}
+.newProductListRight {
+    width: 60%;
+    float: left;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.newRightItem {
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    overflow: hidden;
+}
+
+.newRightItem img {
+    width: 100%;
+    cursor: pointer;
+}
+.newRightItem img:hover {
+    transform: scale(1.1);
+    transition: all 5s ease;
+
+}
+.newRightItem p {
+    font-size: 13px;
+    color: black;
+    margin-top: 20px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+}
+.newProductListLeft img:hover {
+    cursor: pointer;
+}
+.newProducts {
+    overflow: auto;
+    width: 95%;
+    margin: 0px auto;
+}
+/* Sản phẩm nổi bật*/
+.hotProducts {
+    overflow: auto;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.hotProductItem {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.itemImg img {
+    width: 100%;
+}
+.itemImg {
+    position: relative;
+    overflow: hidden;
+}
+.itemImg img:hover {
+    transform: scaleX(1.05);
+    transition: 2.5s;
+}
+
+.description .p2{
+    position: absolute;
+    bottom: 13%;
+    font-weight: bolder;
+    color: whitesmoke;
+    left: 10%;
+    font-size: 120%;
+}
+.description .p1{
+    position: absolute;
+    bottom: 20%;
+    font-weight: bolder;
+    color: whitesmoke;
+    left: 10%;
+    font-size: 80%;
+}
+
+.title:hover {
+    color: red;
+}
+
+.hotProducts h1 {
+    color: #0082e6;
+    text-align: center;
+    margin: 1em 0 1em;
+    font-weight: bolder;
+}
+/* Introduce*/
+.introduce {
+    overflow: auto;
+}
+.introleft {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+.introleft .introleftContent {
+    text-align: center;
+    padding:  15% 0px;    
+}
+.introleftContent p,.introleftContent h2 {
+    padding: 2%;
+}
+.introleftContent p{
+    color: #a09e9e;
+}
+.introright {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+.imgIntroRight {
+    width: 100%;
+}
+
+/* div đăng kí nhận tin*/
+.registerBar {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    background-color: #f1f1f1;
+}
+.registerBar p{
+    font-size: 15px;
+}
+.registLeft {
+    width: 20%;
+    float: left;
+    padding: 2px;
+    margin-top: 8px;
+}
+.registIcon {
+    float: left;
+    margin-right: 1px;
+    font-size: 25px;
+}
+.registText {
+    float: left;
+    margin-left: 5px;
+    padding: 0.4em;
+}
+.registMid {
+    width: 50%;
+    float: left;
+}
+.regisRight {
+    width: 30%;
+    float: left;
+    margin-top: 10px;
+    padding: 2px;
+}
+.phoneIcon {
+    float: left;
+    margin-right: 5px;
+    font-size: 30px;
+}
+.registRightText {
+    float: left;
+    margin-top: 6px;
+}
+.enterEmail {
+    width: 70%;
+    padding: 0.9em;
+    border: 1px solid #e7e7e7;
+}
+.registButton {
+    padding: 15px;
+    background-color:#73c9e2;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+/*Footer*/
+.footer {
+    float: left;
+    padding: 2%;
+    color:rgb(99, 93, 93);
+}
+.footer1 {
+    width: 35%;
+    float: left;
+}
+.footer2 {
+    width: 15%;
+    float: left;
+}
+.footer3 {
+    width: 35%;
+    float: left;
+}
+.footer4 {
+    width: 15%;
+    float: left;
+}
+.footerHeader {
+    padding: 5px;
+    text-align: center;
+}
+.footer1Content {
+    padding: 10px;
+    font-size: 13px;
+}
+.footer4 .footer1Content {
+    font-size: 25px;
+    text-align: center;
+}
+
+.showroomicon {
+    float: left;
+}
+.showroomcontent {
+    float: left;
+    margin-right: 20px;
+}
+.system {
+    padding:10px;
+}
+
